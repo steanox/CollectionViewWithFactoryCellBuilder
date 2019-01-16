@@ -19,7 +19,7 @@ class FactoryCollectionCell: UICollectionViewCell{
     let cellBuilder = CellViewBuilder()
     var cellMenu: [CellOptions]?{
         didSet{
-            cellMenu?.compactMap { buildCell(for: $0) }
+            cellMenu?.compactMap{ buildCell(for: $0) }
         }
     }
     
